@@ -1,0 +1,50 @@
+.benefits {
+  text-align: center;
+}
+
+.benefits__slogan {
+  .control-text();
+
+  font-weight: 700;
+  color: var(--color-base-primary);
+  letter-spacing: 0.04em;
+}
+
+.benefits__title {
+  .title();
+}
+
+.benefits__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.benefits__term {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 32px;
+  color: inherit;
+
+  ::before {
+    content: "";
+    background-image: url("../img/sprite.svg#speed");
+  }
+
+  &--1 {
+    width: 18px;
+    height: 18px;
+    margin: auto;
+  }
+
+  &--1::before {
+    content: "";
+    mask-image: url("../img/sprite.svg#speed");
+  }
+}
+
+.benefits__definition {
+  margin: 0;
+  font-weight: 400;
+  line-height: 20px;
+}

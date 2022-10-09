@@ -11,6 +11,8 @@ env:
 
 globals:
   L: readonly
+  Swiper: readonly
+  Nouislider: readonly
 
 extends:
   "htmlacademy/vanilla"
@@ -25,3 +27,6 @@ rules:
         - 1
         - 10
         - 100
+  quotes:
+    - error
+    - double

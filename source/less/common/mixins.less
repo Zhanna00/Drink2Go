@@ -1,0 +1,44 @@
+.visually-hidden {
+  position: fixed;
+  transform: scale(0);
+}
+
+.title() {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 36px;
+  color: var(--color-base-black);
+}
+
+.control-text() {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  text-align: center;
+  color: inherit;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.button() {
+  box-sizing: border-box;
+  padding: 10px 20px;
+  font-family: inherit;
+  text-align: center;
+  text-decoration: none;
+  border: none;
+  border-radius: 4px;
+
+  &:hover,
+  &:focus {
+    background-color: var(--color-primary-lighter);
+  }
+
+  &:active {
+    background-color: var(--color-primary-darker);
+  }
+
+  &:disabled {
+    background-color: var(--color-base-grey);
+  }
+}

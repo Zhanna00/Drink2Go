@@ -1,13 +1,35 @@
 :root {
-  --color-white: #ffffff;
+  --color-base-white: #ffffff;
+  --color-base-grey: #bdbdbd;
+  --color-base-black: #333333;
+  --color-base-primary: #7859cf;
+  --color-base-secondary: #f0ebff;
+  --color-primary-opacity-25: rgba(120, 89, 207, 0.25);
+  --color-primary-lighter: #9070ec;
+  --color-primary-darker: #593cac;
+  --color-light-grey: #e2e2e2;
+  --color-lightest-grey: #f8f8f8;
+  --color-flat-white: #f3ebe1;
+  --color-lavender-latte: #eae6fc;
+  --color-espresso: #e5e6e8;
+  min-width: 320px;
+  font-size: 14px;
+  font-family: "Montserrat", "Arial", sans-serif;
+  color: var(--color-base-black);
 }
 
 body {
-  min-width: 320px;
   margin: 0;
+}
+
+a {
+  color: inherit;
+  transition-timing-function: ease-in-out;
+  transition-duration: 0.2s;
+  transition-property: color, opacity, background-color, border-color, box-shadow;
 }
 
 img {
   max-width: 100%;
-  height: auto;
+  object-fit: contain;
 }
