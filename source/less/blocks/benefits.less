@@ -2,44 +2,41 @@
   text-align: center;
 }
 
-.benefits__slogan {
-  .control-text();
-
-  font-weight: 700;
-  color: var(--color-base-primary);
-  letter-spacing: 0.04em;
-}
-
-.benefits__title {
-  .title();
-}
-
 .benefits__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
 .benefits__term {
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 32px;
-  color: inherit;
+  .title-secondary();
 
-  ::before {
+  &::before {
     content: "";
+    display: block;
+    width: 52px;
+    height: 56px;
+    margin-right: auto;
+    margin-left: auto;
     background-image: url("../img/sprite.svg#speed");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
   }
 
-  &--1 {
-    width: 18px;
-    height: 18px;
-    margin: auto;
+  &--2::before {
+    background-image: url("../img/sprite.svg#fit");
   }
 
-  &--1::before {
-    content: "";
-    mask-image: url("../img/sprite.svg#speed");
+  &--3::before {
+    background-image: url("../img/sprite.svg#energy");
+  }
+
+  &--4::before {
+    background-image: url("../img/sprite.svg#eco");
   }
 }
 

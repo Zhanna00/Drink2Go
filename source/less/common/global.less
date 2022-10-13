@@ -31,5 +31,21 @@ a {
 
 img {
   max-width: 100%;
-  object-fit: contain;
+  height: auto;
+}
+
+input[type="radio"] {
+  box-sizing: border-box;
+  appearance: radio;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  margin: 0;
+  appearance: none;
+}
+
+/* Firefox */
+input[type="number"] {
+  appearance: textfield;
 }

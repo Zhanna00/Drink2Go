@@ -1,21 +1,5 @@
-// PixelPerfect
-const Breakpoint = {
-  MOBILE: 320,
-  TABLET: 768,
-  DESKTOP: 1440
-};
+import loadEdit from "./modules/edit-content.js";
+import loadPP from "./modules/pixelperfect.js";
 
-window.pinegladePP = {
-  breakpoints: Object.values(Breakpoint)
-};
-
-// Делаем редактируемым контент по нажатию E
-document.querySelectorAll("h1, h2, h3, p, b, a, button, label, legend").forEach((element) => {
-  element.spellcheck = false;
-});
-
-document.addEventListener("keydown", (evt) => {
-  if (evt.key.toLowerCase() === "e") {
-    document.body.contentEditable = document.body.contentEditable !== "true";
-  }
-});
+loadPP();
+loadEdit();

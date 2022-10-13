@@ -1,0 +1,20 @@
+.page-footer__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.page-footer__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+
+  &::before {
+    content: "";
+    mask: url("../img/sprite.svg#vk") no-repeat center / 100%;
+
+    .mask("vk");
+  }
+}

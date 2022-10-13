@@ -1,0 +1,52 @@
+.pagination {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 44px;
+}
+
+.pagination__button {
+  .button();
+
+  padding: 15px 18px;
+  background-color: var(--color-base-white);
+
+
+  &--prev {
+    display: block;
+    width: 10px;
+    height: 10px;
+    margin-right: 20px;
+    mask-repeat: no-repeat;
+
+    &::before {
+      mask-image: url("../img/sprite.svg#pagination");
+    }
+  }
+
+  &--next {
+    margin-left: 20px;
+  }
+}
+
+.pagination__list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.pagination__link {
+  .button();
+  .form-text();
+
+  padding: 15px 18px;
+  font-weight: 400;
+  color: var(--color-base-primary);
+  background-color: var(--color-base-white);
+
+  &--current {
+    color: var(--color-base-black);
+    background: transparent;
+  }
+}

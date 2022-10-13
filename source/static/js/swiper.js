@@ -1,15 +1,15 @@
-new Swiper(".swiper", {
+new Swiper(".slider", {
   // Optional parameters
   loop: true,
 
   // If we need pagination
   pagination: {
-    el: ".swiper-pagination"
+    el: ".slider"
   },
 
   // Navigation arrows
   navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev"
+    nextEl: ".slider__control--next",
+    prevEl: ".slider__control--prev"
   }
 });
