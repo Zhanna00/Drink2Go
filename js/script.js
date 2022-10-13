@@ -1,7 +1,6 @@
-import "./swiper.js";
-const togglerElement = document.querySelector(".page-header__toggler");
+import createSlider from "./modules/slider.js";
+import initMenu from "./modules/menu.js";
 
-togglerElement.addEventListener("click", () => {
-  const expanded = togglerElement.getAttribute("aria-expanded");
-  togglerElement.setAttribute("aria-expanded", expanded === "true" ? "false" : "true");
-});
+initMenu();
+
+createSlider(document.querySelector(".slider"));
