@@ -1,5 +1,10 @@
 .benefits {
+  padding: 50px 20px 60px 20px;
   text-align: center;
+}
+
+.benefits__title {
+  margin: 0;
 }
 
 .benefits__list {
@@ -11,14 +16,25 @@
   list-style: none;
 }
 
+.benefits__item {
+  margin-top: -4px;
+
+  &:first-child {
+    margin-top: 0;
+  }
+}
+
 .benefits__term {
   .title-secondary();
+
+  margin: 35px 0 5px 0;
 
   &::before {
     content: "";
     display: block;
     width: 52px;
     height: 56px;
+    margin: 0 auto 10px auto;
     margin-right: auto;
     margin-left: auto;
     background-image: url("../img/sprite.svg#speed");

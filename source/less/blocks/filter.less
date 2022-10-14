@@ -4,16 +4,29 @@
 
 .filter__item {
   display: flex;
+  padding-bottom: 20px;
   font-size: 16px;
   line-height: 19px;
 }
 
 .filter__group {
+  margin-top: 24px;
+  padding: 0;
   border: none;
+
+  &:first-child {
+    margin-top: 0;
+  }
+
+  &:last-child {
+    margin-top: 3px;
+  }
 }
 
 .filter__group-title {
   .form-text();
+
+  padding-bottom: 23px;
 }
 
 .filter__list {

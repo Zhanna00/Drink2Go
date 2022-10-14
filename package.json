@@ -26,8 +26,6 @@
     "imagemin-mozjpeg": "10.0.0",
     "imagemin-pngquant": "9.0.2",
     "imagemin-svgo": "10.0.1",
-    "leaflet": "1.9.2",
-    "nouislider": "15.6.1",
     "nunjucks": "3.2.3",
     "pineglade-pp": "1.1.4",
     "pineglade-w3c": "1.0.1",

@@ -1,19 +1,21 @@
-.range-scale {
+.range__scale {
   position: relative;
   height: 18px;
+  margin-left: 10px;
+  padding-bottom: 17px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 8px;
+    right: 0;
+    bottom: 8px;
+    left: 0;
+    background-color: #dcdcdc;
+  }
 }
 
-.range-scale::before {
-  content: "";
-  position: absolute;
-  top: 8px;
-  right: 0;
-  bottom: 8px;
-  left: 0;
-  background-color: #dcdcdc;
-}
-
-.range-toggle {
+.range__toggle {
   position: absolute;
   top: -8px;
   z-index: 2;
@@ -25,15 +27,15 @@
   cursor: pointer;
 }
 
-.range-toggle-min {
+.range__toggle--min {
   left: -10px;
 }
 
-.range-toggle-max {
+.range__toggle--max {
   right: -10px;
 }
 
-.range-bar {
+.range__bar {
   position: absolute;
   top: 8px;
   left: 0;
@@ -41,7 +43,7 @@
   background-color: var(--color-primary-lighter);
 }
 
-.range-inputs-wrapper {
+.range__inputs--wrapper {
   position: relative;
   display: flex;
   justify-content: space-between;
@@ -62,7 +64,7 @@
   }
 }
 
-.range-input {
+.range__input {
   .form-text();
 
   box-sizing: border-box;
@@ -75,80 +77,4 @@
   border: 2px solid var(--color-primary-lighter);
   border-radius: 4px;
   appearance: textfield;
-}
-
-// Если будешь использовать noUISlider
-.range__target {
-  width: 100%;
-  margin-top: 20px;
-  padding-right: 20px;
-  -webkit-touch-callout: none;
-  -webkit-tap-highlight-color: transparent;
-}
-
-.range__base {
-  position: relative;
-  height: 20px;
-
-  &::before {
-    content: "";
-    position: absolute;
-    top: 8px;
-    right: -20px;
-    bottom: 8px;
-    left: 0;
-    background-color: currentColor;
-    opacity: 0.3;
-  }
-}
-
-.range__connect,
-.range__origin {
-  position: absolute;
-  width: 100%;
-  transform-origin: 0 0;
-  transform-style: flat;
-  transition: transform 0.2s ease-in-out;
-  will-change: transform;
-}
-
-.range__connect {
-  top: 8px;
-  right: 0;
-  height: 4px;
-  background-color: currentColor;
-}
-
-.range__origin {
-  top: 0;
-  left: 100%;
-}
-
-.range__handle {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 20px;
-  height: 20px;
-  background-color: currentColor;
-  border-radius: 5px;
-  cursor: pointer;
-
-  &:hover {
-    box-shadow: 0 4px 10px var(--color-base-25);
-  }
-
-  &:focus {
-    outline: var(--focus-outline);
-    box-shadow: 0 4px 10px var(--color-base-25);
-  }
-
-  &:active {
-    outline: 2px solid var(--color-cold-lite);
-    box-shadow: 0 7px 15px var(--color-base-40);
-  }
-}
-
-.range__touch-area {
-  height: 100%;
 }

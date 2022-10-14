@@ -1,20 +1,23 @@
-.page-footer__list {
-  margin: 0;
-  padding: 0;
-  list-style: none;
+.page-footer {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 20px;
 }
 
-.page-footer__link {
+.page-footer__social {
   display: flex;
-  justify-content: center;
   align-items: center;
-  width: 40px;
-  height: 40px;
+  min-width: 160px;
+  margin-bottom: 20px;
+  margin-left: auto;
+}
 
-  &::before {
-    content: "";
-    mask: url("../img/sprite.svg#vk") no-repeat center / 100%;
+.page-footer__links {
+  width: 100%;
+  padding: 20px 20px 0 20px;
+  border-top: 1px solid var(--color-base-grey);
+}
 
-    .mask("vk");
-  }
+.page-footer__link:not(:last-child) {
+  margin-bottom: 4px;
 }
